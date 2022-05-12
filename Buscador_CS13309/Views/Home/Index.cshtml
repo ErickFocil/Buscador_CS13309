@@ -9,15 +9,20 @@
     {
         <table style="margin:0 auto" cellpadding="2" cellspacing="0" border="0">
             <tr>
-                <td>Palabra:</td>
+                <td align="right">Palabra:</td>
                 <td>
                     @Html.TextBox("palabra")
                 </td>
                 <td>
                     <input type="submit" value="Buscar"/>
-                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Omitir Filtro (StopList):</td>
+                <td align="left">
+                    <input id="sSL" type="checkbox" value="true" name="sSL"/>
+                </td>
             </tr>
         </table>
     }
-    <a asp-area="" asp-controller="Home" asp-action="Resultado">Buscar</a>
 </div>

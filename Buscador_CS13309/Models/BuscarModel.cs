@@ -5,9 +5,12 @@ namespace Buscador_CS13309.Models
     public class BuscarModel
     {
         public string Palabra { get; set; }
+        public bool sSL { get; set; }
         public List<string> Resultado()
         {
-            string e = "Scripts/CS13309_SearchTool.exe";
+            string e = "";
+            if (!sSL) e = "Scripts/CS13309_SearchTool.exe";
+            else e = "Scripts/CS13309_SearchTool_sinStopList.exe";
             string a = "retrieve " + Palabra;
 
             ProcessStartInfo process = new ProcessStartInfo(e);

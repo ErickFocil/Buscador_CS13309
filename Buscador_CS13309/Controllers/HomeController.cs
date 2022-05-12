@@ -25,9 +25,10 @@ namespace Buscador_CS13309.Controllers
             return View();
         }
 
-        public IActionResult Resultado(string palabra="uno")
+        public IActionResult Resultado(string palabra="uno", bool sSL = false)
         {
             buscar.Palabra = palabra;
+            buscar.sSL = sSL;
             List<string> resultado = buscar.Resultado();
             ViewBag.Palabra = palabra;
             ViewBag.Resultado = resultado;
