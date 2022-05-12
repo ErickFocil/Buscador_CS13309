@@ -11,21 +11,23 @@
     @if(@ViewBag.Resultado.Count != 0)
     {
         <p>Lista de arhcivos que contienen la palabra "@ViewBag.Palabra"</p>
-        <p>La lista está ordenada del mejor resultado al pero, solo se muestran como máximo 10 archivos</p>
+        <p>La lista está ordenada del mejor resultado al peor, solo se muestran como máximo 10 archivos</p>
     }
     else
     {
         <p>La palabra "@ViewBag.Palabra" no se encuentra en ningúna página actual.</p>
     }
 
-    
+    @{int i = 1;}
     @foreach(string line in @ViewBag.Resultado)
     {
         @using(Html.BeginForm("HTMLView", "Home", FormMethod.Get))
         {
-            <a href="/Home/HTMLView/@line">@line</a>
+            <p>@i - <a href="/Home/HTMLView/@line">@line</a></p>
             //<a href="/HTML/@line">@line</a>
         }
+
+        i++;
     }
     <br/>
     <a class="navbar-brand" asp-controller="Home" asp-action="Index">Regresar</a>
