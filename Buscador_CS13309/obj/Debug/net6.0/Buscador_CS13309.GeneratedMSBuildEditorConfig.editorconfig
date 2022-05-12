@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\edfoc\source\repos\Buscador_CS13309\Buscador_CS13309
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/edfoc/source/repos/Buscador_CS13309/Buscador_CS13309/Views/Home/HTMLView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIVE1MVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/edfoc/source/repos/Buscador_CS13309/Buscador_CS13309/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

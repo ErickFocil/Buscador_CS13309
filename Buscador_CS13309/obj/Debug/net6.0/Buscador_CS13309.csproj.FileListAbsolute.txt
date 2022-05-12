@@ -24,3 +24,4 @@ C:\Users\edfoc\source\repos\Buscador_CS13309\Buscador_CS13309\obj\Debug\net6.0\r
 C:\Users\edfoc\source\repos\Buscador_CS13309\Buscador_CS13309\obj\Debug\net6.0\Buscador_CS13309.pdb
 C:\Users\edfoc\source\repos\Buscador_CS13309\Buscador_CS13309\obj\Debug\net6.0\Buscador_CS13309.genruntimeconfig.cache
 C:\Users\edfoc\source\repos\Buscador_CS13309\Buscador_CS13309\obj\Debug\net6.0\ref\Buscador_CS13309.dll
+C:\Users\edfoc\source\repos\Buscador_CS13309\Buscador_CS13309\bin\Debug\net6.0\Scripts\CrearDiccionario\ProySoftAlt.runtimeconfig.json

@@ -5,5 +5,19 @@
 <div class="text-center">
     <h1 class="display-4">Buscador</h1>
     <p>Ingrese la palabra a buscar</p>
+    @using(Html.BeginForm("Resultado", "Home", FormMethod.Get))
+    {
+        <table style="margin:0 auto" cellpadding="2" cellspacing="0" border="0">
+            <tr>
+                <td>Palabra:</td>
+                <td>
+                    @Html.TextBox("palabra")
+                </td>
+                <td>
+                    <input type="submit" value="Buscar"/>
+                    </td>
+            </tr>
+        </table>
+    }
     <a asp-area="" asp-controller="Home" asp-action="Resultado">Buscar</a>
 </div>

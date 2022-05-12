@@ -7,7 +7,7 @@ namespace Buscador_CS13309.Models
         public string Palabra { get; set; }
         public List<string> Resultado()
         {
-            string e = @"C:\CS13309\Scripts\CS13309_SearchTool.exe";
+            string e = "Scripts/CS13309_SearchTool.exe";
             string a = "retrieve " + Palabra;
 
             ProcessStartInfo process = new ProcessStartInfo(e);
