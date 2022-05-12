@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<string>
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+<div class="text-center">
+    <h1>Resultado</h1>
+    <p>Lista de arhcivos que contienen la palabra "@ViewBag.Palabra"</p>
+    <p>La lista está ordenada del mejor resultado al peor, solo se muestran como máximo 10 archivos</p>
+    
+    @foreach(string line in @ViewBag.Resultado)
+    {
+        <p>
+            <a href="C:/CS13309/Files/@line">@line</a>
+        </p>
+    }
+
+    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Regresar</a>
+</div>

@@ -8,6 +8,8 @@ namespace Buscador_CS13309.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        private BuscarModel buscar = new BuscarModel();
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -23,8 +25,13 @@ namespace Buscador_CS13309.Controllers
             return View();
         }
 
-        public IActionResult Buscador()
+        public IActionResult Resultado(string palabra="uno")
         {
+            buscar.Palabra = palabra;
+            List<string> resultado = buscar.Resultado();
+            ViewBag.Palabra = palabra;
+            ViewBag.Resultado = resultado;
+
             return View();
         }
 
